@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/bundle.min.css">
+
+    <title>Algebra Projekt</title>
+  </head>
+  <body class="geolokacija-page">
+    <!-- BEGIN NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-black sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="assets/images/disko.png" width="50px" height="40px"> CLUB LIFE
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link text-right" href="aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item text-right">
+                      <a class="nav-link" href="Geolokacija.html">Location</a>
+                  </li>
+                  <li class="nav-item text-right">
+                      <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Contact Us</a>
+                  </li>
+              </ul>
+            </div>
+      </div>
+    </nav>
+    <!-- END NAVIGATION -->
+
+  <h1 class="text-center text-snow mt-3">Location</h1>
+  
+	<!-- BEGIN MAP -->
+	<div id="map" class="mt-3"></div>
+  <!-- END MAP -->
+
+  <p class="text-center text-snow">
+  Croatia, Antuna Šoljana 3, Špansko, 10 000 Zagreb
+  </p>
+
+	<!-- BEGIN FOOTER -->
+	<div class="card blockquote-footer">
+		<div class="card-body">
+			<blockquote class="blockquote mb-0">
+			<p>Algebra učilište – Web programer za razvoj korisničkog sučelja</p>
+			<footer class="blockquote-footer">rOk ThE nOoB wEbStEr</footer>
+			</blockquote>
+		</div>
+		</div>
+	<!-- END FOOTER -->
+
+	<!-- JavaScript -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9sAVSL-qYlKojLZljyM_J_kWl0Hc8gHA"></script>
+	<script src="/assets/js/bundle.min.js"></script>
+	<script>
+		window.onload = function(){
+			Geolocation.initGeolocation();
+		};
+	</script>
+	<script>
+		$(document).ready(function(){
+		  App.init({
+			login: true
+		  });
+		});
+	  </script>
+	</body>
+</html>

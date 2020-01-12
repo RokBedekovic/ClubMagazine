@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/bundle.min.css">
+
+    <title>Club Life</title>
+  </head>
+  <body class="home-page">
+    <!-- BEGIN NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-black sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="assets/images/disko.png" width="50px" height="40px"> CLUB LIFE
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link text-right" href="aboutUs.html">About Us</a>
+                  </li>
+                  <li class="nav-item text-right">
+                      <a class="nav-link" href="geolocation.html">Location</a>
+                  </li>
+                  <li class="nav-item text-right">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item text-right">
+                      <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign Up</a>
+                  </li>
+              </ul>
+            </div>
+      </div>
+    </nav>
+    <!-- END NAVIGATION -->
+
+    <!-- BEGIN HERO AREA -->
+    <section>
+      <div class="jumbotron text-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <h1 class="display-4">We are the home of Real Techno Music!</h1>
+              <p class="lead">How do you live your Club Life ?</p>
+              <button class="btn btn-primary btn-lg text-right" id="voidButton">Enter the void</button>
+              <div id="voidToggler" class="text-snow text-center">The Void</div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END HERO AREA -->
+
+    <!-- BEGIN CONTENT -->
+    <main>
+      <section class="mb-5">
+        <div class="container">
+          <header class="text-center mb-5 text-snow">
+            <h1>We are the best club mag around!</h1>
+            <h4 class="subtitle text-snow">Ofc we are the best(fake) DjMag ever 100%.</h4>
+          </header>
+          <div class="row">
+            <div class="col-lg-4">
+                  <article class="text-center">
+                      <div class="icon-box mb-3 rounded-circle">
+                      <i class="fas fa-warehouse fa-2x text-primary" ></i>
+                      </div>
+                      <div class="mb-3 text-snow">
+                        Places where you can find proper rave for the night in Zagreb:
+                        Boogaloo (aka Otv), DEPO, Akc Medika Attack, Akc Medika Mikro,
+                        GK Jabuka, Aquarius, Sound Factory, Pločnik, Museum Katran, Podmornica,
+                        Super Super, Tvornica, Positive Brewery, Opera, Močvara, Best and others...
+                      </div> 
+                  </article>
+            </div>
+            <div class="col-lg-4">
+                <article class="text-center">
+                    <div class="icon-box mb-3 rounded-circle">
+                    <i class="fas fa-compact-disc fa-3x text-primary" ></i>
+                    </div>
+                    <div class="mb-3 text-snow">
+                      Some popular tracks played at club events: Dj Rolando-Jaguar, 
+                      Umek-Lanicor, Da Hool-Meet Her At Loveparade, Jeff Mills-The Bells, 
+                      Paul Kalkbrenner-Altes Kamuffel, Tom Craft-Loneliness, Astral Projection- Mahadeva, 
+                      Jerome Ismaae-Hold That Sucker Down, Cirez D-Glow, Oh and Darude Sandstorm ofc :P
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <article class="text-center">
+                    <div class="icon-box mb-3 rounded-circle">
+                    <i class="fas fa-headphones-alt fa-3x text-primary" ></i>
+                    </div>
+                    <div class="mb-3 text-snow">
+                      Few local djs on the scene: Damir Ludvig & Go-cut(Astralis),
+                      Mr. Dj Dario, Harouda, Zoky, Maminjo, Hadji, Cet, Frajman, Felver, 
+                      FORM, Toxic, Matija Marinić, Tom Bug, Komlinović, Shipe, Senno, Dj Ogi, 
+                      Mary, Tom Cue, Dj Jock, Matya, Pete Dux, Ivica Petak, Nick Milly, 
+                      Teychee, Branos, Slicer and more...
+                    </div>
+                </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner first"></section>
+    </main>
+    <!-- END CONTENT -->
+
+    <!-- BEGIN LOGIN MODAL-->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-sm" role="document">
+            <form id="loginForm" data-parsley-validate="true">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Sign In</h5>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your emal" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary">Sign In</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+               </div>
+            </form>
+          </div>
+      </div>
+    <!-- END LOGIN MODAL-->
+
+    <!-- BEGIN EVENT ADVERT -->
+    <article class="text-center">
+      <div class="container">
+        <header class="text-center mt-5 text-snow css-ani">
+          <h1>Advertise your own event here!</h1>
+        </header>
+        <div class="row">
+          <div class="col-lg-6">
+            <section>
+              <form class="advert-form text-snow">
+                <div class="form-group mt-3">
+                  <label>Event Name</label>
+                  <input type="text" class="form-control" placeholder="Enter event name" name="Event_name" id="advertName" required="">
+                </div>
+                <div class="form-group">
+                  <label>Date</label>
+                  <input type="date" class="form-control" name="Event_date" id="advertDate" required="">
+                </div>
+                <div class="form-group mt-3">
+                  <label>Info</label>
+                  <input type="text" class="form-control" placeholder="Event details" name="Event_info" id="advertInfo">
+                </div>
+                <button type="submit" class="btn btn-outline-primary mb-3 mt-3" id="advertbtn">Submit</button>
+                <button type="reset" class="btn btn-outline-primary mb-3 mt-3" value="Reset">Reset</button>
+              </form>
+            </section>
+          </div>
+          <div class="col-lg-6">
+            <section>
+              <div class="text-snow">
+                <div id="advertPit" class="mb-3">PARTY:  </div>
+                <br>
+                <div id="advertPitDva" class="mb-3 mt-5">DATE:  </div>
+                <br>
+                <div id="advertPitTri" class="mt-5">INFO:  </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </article>
+    <!-- END EVENT ADVERT -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="card blockquote-footer">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <footer class="blockquote-footer">rOk ThE nOoB wEbStEr</footer>
+          </blockquote>
+        </div>
+      </div>
+    <!-- END FOOTER -->
+    <!-- JavaScript -->
+    <script src="/assets/js/bundle.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        App.init({
+          login: true
+        });
+      });
+    </script>
+  </body>
+</html>

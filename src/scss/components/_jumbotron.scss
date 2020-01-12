@@ -1,0 +1,8 @@
+.jumbotron{
+    background: transparent image('ClubOne.jpeg') no-repeat center center;
+    background-size: cover;
+    text-shadow: 0 0 5px #007bff;
+    color: $white;
+
+    @include border-radius(0);
+}

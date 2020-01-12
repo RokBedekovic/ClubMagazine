@@ -1,0 +1,32 @@
+.contact-page{
+    .navbar-dark .navbar-nav .nav-link{
+        color: #007bff;
+    }
+    background-color: #121212;
+    .text-snow{
+        color: white;
+    }
+    .blockquote-footer{
+        background-color: #121212;
+        text-align: center;
+        color: #007bff
+    }
+    .card{
+        background-color: #121212;
+    }
+    .contact-form{
+        background-color: white;
+        text-align: center;
+        margin: auto;
+        width: 800px;
+        border: 5px solid #007bff;
+        border-radius: 5%;
+    }
+    .frm-border{
+        border-bottom: 1px solid #ced4da;
+    }
+    .form-group{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}

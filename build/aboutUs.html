@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/bundle.min.css">
+
+    <title>About us</title>
+  </head>
+  <body class="home-page">
+    <!-- BEGIN NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-black sticky-top">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">
+              <img src="assets/images/disko.png" width="50px" height="40px"> CLUB LIFE
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link text-right" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item text-right">
+                      <a class="nav-link" href="geolocation.html">Location</a>
+                  </li>
+                  <li class="nav-item text-right">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item text-right">
+                      <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Sign Up</a>
+                  </li>
+              </ul>
+            </div>
+      </div>
+    </nav>
+    <!-- END NAVIGATION -->
+
+    <!-- BEGIN CONTENT -->
+    <main>
+      <section>
+        <div class="container">
+          <header class="text-center text-snow mt-5">
+            <h1>About Club Life</h1>
+          </header>
+          <div class="text-center text-snow mt-5">
+            <article>
+              <section>
+                <p>
+                  In the beginning, there was Club Life.
+                  Club Life was born at the start of the digital revolution. 
+                  We are the result of our experiences as an Independent Group 
+                  navigating the disruption caused by the internet. To this day 
+                  we retain our original ethos which was built upon the reputation 
+                  of that group, Club Life. We are literally ravers who built one 
+                  of the first online magazine for 
+                  our friends who were also party freaks, resulting in  site with
+                  the heart of an independent magazine...
+                </p>
+              </section>
+
+              <section><img src="assets/images/bener.png" width="1100px" height="250px"></section>
+
+              <section>
+                <p class="mt-3">
+                  Since our birth in june 2018, Club Life has secured a place in the hearts and minds of DJs around the world. We are ambassadors for the true underground movement that is Techno Music, driven by our unique and authentic musical point of view. Our mission has always been to provide a home for creative artists and labels to flourish, because their story is our story, and this synergy is the lifeforce of our store. We stand by the artists and labels we serve because we genuinely understand what it takes to survive in today’s industry.
+                </p>
+
+                <p>
+                  In 2019 we continue to forge ahead with our beloved lifelong customers, new-found friends and a global fanbase. Featuring high profile A list artists right alongside breakthrough and bedroom artists, it’s always our pleasure to uncover emerging talent who will become tomorrow’s stars.
+                </p>
+              </section>
+
+              <section>
+                <video width="1100" height="700" controls autoplay class="mt-n4">
+                  <source src="assets/videos/clubbing.mp4" type="video/mp4">
+                </video>
+
+                <p class="mt-2">
+                  We are the home of Real Techno Music! This phrase has never been more relevant than in today’s over-saturated post EDM market. With electronic music continuing to take a central stage with widespread global attention, the necessity to champion ‘quality over quantity’ and ‘artistry over hype’ is even more real to us than ever before. We uphold the soul of the scene and defy the faceless and commercial enterprises so prevalent today. For us, it’s always all about integrity and keeping it fiercely independent. Not everybody understands Techno Music… but we do.
+                </p>
+              </section>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- END CONTENT -->
+
+    <!-- BEGIN LOGIN MODAL-->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-sm" role="document">
+            <form id="loginForm" data-parsley-validate="true">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Sign In</h5>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your emal" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-primary">Sign In</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+               </div>
+            </form>
+          </div>
+      </div>
+    <!-- END LOGIN MODAL-->
+    <!-- BEGIN FOOTER -->
+    <div class="card blockquote-footer">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <footer class="blockquote-footer">rOk ThE nOoB wEbStEr</footer>
+          </blockquote>
+        </div>
+      </div>
+    <!-- END FOOTER -->
+    <!-- JavaScript -->
+    <script src="/assets/js/bundle.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        App.init({
+          login: true
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+.home-page{
+    .subtitle{
+        position: relative;
+
+        &::after{
+            content: " ";
+            display: block;
+            height: 4px;
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            bottom: -10px;
+            box-shadow: 5px 5px 15px $blue;
+
+            @include border-radius(50%);
+        }
+    }
+    .icon-box{
+        width: 100px;
+        height:100px;
+        margin: auto;
+        border: solid 1px #007fbb;
+        position: relative;
+    }
+
+    i{
+        position: relative;
+        top: 50px;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .banner{
+        height: 467px;
+        padding{
+            top: 80px;
+            bottom: 80px;
+        }
+
+        &.first{
+            background: transparent image('bagra.jpg') no-repeat 0 0;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        color: #007bff;
+    }
+    background-color: #121212;
+    .text-snow{
+        color: white;
+    }
+    .blockquote-footer{
+        background-color: #121212;
+        text-align: center;
+        color: #007bff
+    }
+    .card{
+        background-color: #121212;
+    }
+    .advert-form{
+        background-color: #393739;
+        border-radius: 5%;
+    }
+    .form-group{
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    #voidToggler{
+        background: black;
+        height: 100px;
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 50%;
+    }
+    .css-ani{
+            -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+            -webkit-animation-name: bounceIn;
+            animation-name: bounceIn;
+            -webkit-animation-iteration-count: 15;
+            animation-iteration-count: 15;
+    }
+    @keyframes bounceIn {
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes bounceIn {
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+}
